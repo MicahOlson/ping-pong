@@ -4,6 +4,8 @@ def ping_pong(number)
   result.each do |element|
     if element.%(3).eql?(0)
       result[index] = "ping"
+    elsif element.%(5).eql?(0)
+      result[index] = "pong"
     end
     index += 1
   end
